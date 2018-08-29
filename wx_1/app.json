@@ -1,0 +1,18 @@
+{
+  "pages": [
+
+    "pages/boss/boss",
+    "pages/PHP/PHP",
+    "pages/scroll-view/scroll-view",
+    "pages/data-hi/data-hi",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  }
+}

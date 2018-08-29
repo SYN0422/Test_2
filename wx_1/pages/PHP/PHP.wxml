@@ -1,0 +1,120 @@
+<!--pages/PHP/PHP.wxml-->
+<scroll-view style='height:{{height}} + "%";scroll-y:{{scroll}}'>
+  <view class='all'>
+    <view>
+      <image src='../../image/home.png' class='home' bindtap='home'></image>
+      <input class='top_input' placeholder='搜索职位' value='{{value}}'></input>
+      <text class='search'>搜索</text>
+      <text class='top_city'>北京</text>
+      <image src='../../image/direction.png' class='direction'></image>
+    </view>
+
+    <view class='choose'>
+      <view class='choose_tip' bindtap='experience'>
+        经验
+        <image src='../../image/direction.png' class='choose_direction' style='transform:{{transform}}'></image>
+      </view>
+      <view class='choose_tip' bindtap='school'>
+        学历
+        <image src='../../image/direction.png' class='choose_direction' style='transform:{{transforms}}'></image>
+      </view>
+      <view class='choose_tip' bindtap='money'> 
+        薪资
+        <image src='../../image/direction.png' class='choose_direction' style='transform:{{transforms_m}}'></image>
+      </view>
+      <view class='choose_tip' bindtap='big'>
+        规模
+        <image src='../../image/direction.png' class='choose_direction' style='transform:{{transforms_b}}'></image>
+      </view>
+      <view class='choose_tip' bindtap='rong_money'>
+        融资
+        <image src='../../image/direction.png' class='choose_direction' style='transform:{{transforms_r}}'></image>
+      </view>
+    </view>
+
+    <scroll-view scroll-y="true" style='height:980rpx'>
+      <view class='view' wx:for="{{jsons.result}}" wx:key="{{key}}">
+        <view class='content'>
+          <image class='content_img' src='//www.lgstatic.com/{{item.companyLogo}}'></image>
+          <view class='content_right'>
+            <view class='content_top'>
+              <text class='con_top_left'>{{item.positionName}}</text>
+              <text class='con_top_right'>{{item.salary}}</text>
+            </view>
+            <view class='company'>{{item.companyFullName}}</view>
+            <view class='content_bottom'>
+              <text class='address'>{{item.city}}</text>
+              <text class='time'>{{item.ageLimit}}</text>
+              <text class='education'>{{item.educationBackground}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='wrap' bindtap='hideview' style='display:{{display}}'>
+  </view>
+  <view class='experience'style='display:{{display}}'>
+      <view style='background-color:#f6f6f6;' bindtap='exe_all'>不限</view>
+      <view bindtap='ying'>应届生</view>
+      <view>1年以内</view>
+      <view>1-3年</view>
+      <view>3-5年</view>
+      <view>5-10年</view>
+      <view>10年以上</view>
+    </view>
+
+  <view class='wrap' bindtap='hideview1' style='display:{{displays}}'>
+  </view>
+  <view class='experience'style='display:{{displays}}'>
+      <view style='background-color:#f6f6f6;'>不限</view>
+      <view>初中及以下</view>
+      <view>中专/中技</view>
+      <view>高中</view>
+      <view>大专</view>
+      <view>本科</view>
+      <view>硕士</view>
+      <view>博士</view>
+    </view>
+
+  <view class='wrap' bindtap='hideview1' style='display:{{displays_m}}'>
+  </view>
+  <view class='experience'style='display:{{displays_m}}'>
+      <view style='background-color:#f6f6f6;'>不限</view>
+      <view>3k以下</view>
+      <view>3-5k</view>
+      <view>5-10k</view>
+      <view>10-15k</view>
+      <view>15-20k</view>
+      <view>20-30k</view>
+      <view>30-50k</view>
+      <view>50k以上</view>
+    </view>
+
+  <view class='wrap' bindtap='hideview1' style='display:{{displays_b}}'>
+  </view>
+  <view class='experience'style='display:{{displays_b}}'>
+      <view style='background-color:#f6f6f6;'>不限</view>
+      <view>0-20人</view>
+      <view>20-99人</view>
+      <view>100-499人</view>
+      <view>500-999人</view>
+      <view>1000-9999人</view>
+      <view>10000人以上</view>
+    </view>
+
+    <view class='wrap' bindtap='hideview1' style='display:{{displays_r}}'>
+  </view>
+  <view class='experience'style='display:{{displays_r}}'>
+      <view style='background-color:#f6f6f6;'>不限</view>
+      <view>未融资</view>
+      <view>天使轮</view>
+      <view>A轮</view>
+      <view>B轮</view>
+      <view>C轮</view>
+      <view>D轮及以上</view>
+      <view>已上市</view>
+      <view>不需要融资</view>
+  </view>
+</scroll-view>

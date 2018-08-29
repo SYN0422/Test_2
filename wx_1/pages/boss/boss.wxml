@@ -1,0 +1,75 @@
+<!--pages/boss/boss.wxml-->
+<view class="header" style="background: url(../../image/bei.png) no-repeat; background-size: 100%">
+  <view class="title" style="background: url(../../image/zi.png) no-repeat; background-size: 100%"></view>
+  <input class="top_input" placeholder='搜索职位/公司'>
+    <text class='search'>搜索</text>
+  </input>
+</view>
+<image src='../../image/boss1.png' class='tip_img'></image>
+<text class='tip'>技术</text>
+<view class='all_kinds'>
+  <text class='kind'>Java</text>
+  <text class='kind' bindtap='php'>PHP</text>
+  <text class='kind'>Web前端</text>
+  <text class='kind'>数据挖掘</text>
+  <text class='kind'>C++</text>
+  <text class='kind'>Python</text>
+  <text class='kind'>Android</text>
+  <text class='kind'>iOS</text>
+</view>
+
+<image src='../../image/boss2.png' class='tip_img'></image>
+<text class='tip'>产品</text>
+<view class='all_kinds'>
+  <text class='kind' bindtap='product'>产品经理</text>
+  <text class='kind'>产品助理</text>
+  <text class='kind'>网页产品经理</text>
+  <text class='kind'>数据产品经理</text>
+</view>
+
+<image src='../../image/boss3.png' class='tip_img'></image>
+<text class='tip'>设计</text>
+<view class='all_kinds'>
+  <text class='kind' bindtap='ui'>UI设计师</text>
+  <text class='kind'>平面设计师</text>
+  <text class='kind'>交互设计师</text>
+  <text class='kind'>设计总监</text>
+</view>
+
+<image src='../../image/boss4.png' class='tip_img'></image>
+<text class='tip'>市场</text>
+<view class='all_kinds'>
+  <text class='kind' bindtap='market'>市场营销</text>
+  <text class='kind'>商务渠道</text>
+  <text class='kind'>品牌公关</text>
+  <text class='kind'>市场总监</text>
+  <text class='kind'>策划经理</text>
+  <text class='kind'>活动策划</text>
+  <text class='kind'>SEO</text>
+  <text class='kind'>SEM</text>
+</view>
+
+<image src='../../image/boss5.png' class='tip_img'></image>
+<text class='tip'>运营</text>
+<view class='all_kinds'>
+  <text class='kind'>用户运营</text>
+  <text class='kind'>产品运营</text>
+  <text class='kind'>新媒体运营</text>
+  <text class='kind'>运营总监</text>
+  <text class='kind'>商家运营</text>
+  <text class='kind'>电商运营</text>
+  <text class='kind'>编辑</text>
+  <text class='kind'>客服经理</text>
+</view>
+
+<image src='../../image/boss6.png' class='tip_img'></image>
+<text class='tip'>智能/高级管理</text>
+<view class='all_kinds'>
+  <text class='kind' bindtap='resurse'>人力资源</text>
+  <text class='kind'>行政</text>
+  <text class='kind'>财务</text>
+  <text class='kind'>会计</text>
+  <text class='kind'>HRBP</text>
+</view>
+
+<view class='bottom'></view>
